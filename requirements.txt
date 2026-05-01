@@ -1,8 +1,26 @@
-# Core dependencies
-streamlit>=1.32.0
-python-docx>=1.1.0
-Pillow>=10.0.0
-huggingface_hub>=0.21.0
+# ── Core web framework ────────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
 
-# OpenAI for GPT-4 Vision
-openai>=1.0.0
+# ── Image / document processing ───────────────────────────────────────────────
+Pillow>=10.0.0
+python-docx>=1.1.0
+
+# ── Vision model integration ──────────────────────────────────────────────────
+huggingface_hub>=0.21.0
+openai>=1.12.0
+requests>=2.31.0
+
+# ── Agentic stack helpers ─────────────────────────────────────────────────────
+pydantic>=2.5.0
+
+# ── Optional: local GPU inference (heavy — skip for cloud) ────────────────────
+# torch>=2.0.0
+# torchvision>=0.15.0
+# transformers>=4.45.0
+# accelerate>=0.27.0
+# qwen-vl-utils>=0.0.2
+
+# ── Dev / legacy Streamlit app ────────────────────────────────────────────────
+streamlit>=1.32.0
